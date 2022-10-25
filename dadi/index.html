@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Dadi</title>
+</head>
+<body class="container text-center">
+    <h1>Dadi</h1>
+    <p class="fs-4 fw-bold">
+        Lancia il dado e scopri se hai vinto contro la cpu
+    </p>
+    <button id="roll_dice" class="button mt-4">
+        Lancia il dado
+    </button>
+    <div class="row mt-5">
+        <div class="col fs-1">
+            <div id="firstDice"></div>
+            <div>TU</div>
+        </div>
+        <div id="result" class="col fs-1"></div>
+        <div  class="col fs-1">
+            <div id="secondDice"></div>
+            <div>CPU</div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
