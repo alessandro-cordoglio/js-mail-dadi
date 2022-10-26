@@ -13,17 +13,19 @@ Consigli del giorno:
 
 const mailList= ["fabio@gmail.com", "fabiolone@gmail.com", "fabietto@gmail.com"]
 const mail= prompt("Inserisci la tua mail")
+let found = false; //variabile x capire se l'elemento è stato trovato
 
-/* for (let i = 0; i < mailList.length; i++) {
-     console.log(mailList[i])
+for (let i = 0; i < mailList.length; i++) {
     if (mail===mailList[i]) {
-        alert(`Bentornato ${mail}`)
+        found=true;
+        break
     }
-    else{
-        alert("Inserisci una mail registrata")
-    }
-} */
-
+}
+if (found) {
+    alert("Bentornato")
+}else{
+    alert("Inserisci una mail registrata")
+}
 
 
 
